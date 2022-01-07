@@ -4,28 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
   <link href="./output.css" rel="stylesheet">
   <title>Conquering Responsive Layouts</title>
 </head>
-<body class="text-neutral-900">
+<body class="text-neutral-900 font-body text-base">
   <header class="text-white">
     <!-- nav bar -->
-    <nav class="bg-custom-darkest">
+    <nav class="bg-custom-darkest font-accent">
       <img src="./img/logo.svg" alt="CRL logo">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Sign In</li>
-        <li>Sign Up</li>
+      <ul class="text-lg">
+        <li class="uppercase">Home</li>
+        <li class="uppercase">About</li>
+        <li class="uppercase">Contact</li>
+        <li class="uppercase">Sign In</li>
+        <li class="uppercase">Sign Up</li>
       </ul>
     </nav>
   
     <!-- hero section -->
     <section class="bg-custom-darker">
-      <h1>Responsive layouts <span class="text-custom-accent">don't have to be a struggle</span></h1>
-      <p class="text-custom-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur, quam assumenda quaerat praesentium architecto vitae repudiandae sed!</p>
-      <a href="#">I want to learn</a>
+      <h1 class="font-accent text-8xl">Responsive layouts <span class="text-custom-accent">don't have to be a struggle</span></h1>
+      <p class="text-neutral-400 text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur, quam assumenda quaerat praesentium architecto vitae repudiandae sed!</p>
+      <a class="font-accent text-2xl uppercase" href="#">I want to learn</a>
     </section>
   </header>
   
@@ -35,20 +38,20 @@
 
       <!-- Mobile First -->
       <div>
-        <h3 class="text-custom-accent">Mobile First</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur doloribus mollitia consectetur.</p>
+        <h3 class="text-custom-accent font-accent text-3xl">Mobile First</h3>
+        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur doloribus mollitia consectetur.</p>
       </div>
 
       <!-- Efficient -->
       <div>
-        <h3 class="text-custom-accent">Efficient</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur.</p>
+        <h3 class="text-custom-accent font-accent text-3xl">Efficient</h3>
+        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur.</p>
       </div>
 
       <!-- Done Right -->
       <div>
-        <h3 class="text-custom-accent">Done Right</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur. Quos totam placeat iusto saepe eius</p>
+        <h3 class="text-custom-accent font-accent text-3xl">Done Right</h3>
+        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur. Quos totam placeat iusto saepe eius</p>
       </div>
 
     </section>
@@ -56,27 +59,28 @@
     <!-- It doesn’t have to be so hard -->
     <section>
       
-      <h2 class="text-custom-accent">It doesn’t have to be so hard</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in, nemo libero vitae amet eveniet doloremque, repellendus aspernatur neque quos alias perferendis expedita quam ducimus ut quasi earum voluptates tenetur necessitatibus aliquam et nobis! Dolor laborum amet magni fugiat libero?</p>
+      <!-- It doesn’t have to be so hard -->
+      <h2 class="text-custom-accent font-accent text-4xl">It doesn’t have to be so hard</h2>
+      <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in, nemo libero vitae amet eveniet doloremque, repellendus aspernatur neque quos alias perferendis expedita quam ducimus ut quasi earum voluptates tenetur necessitatibus aliquam et nobis! Dolor laborum amet magni fugiat libero?</p>
       <img src="./img/hero-img.jpg" alt="blue purple and green watercolor designs">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora officiis, aliquam itaque repudiandae dicta exercitationem! Iusto voluptatibus consequatur tempora et deleniti asperiores? Aliquam, facilis asperiores.</p>
+      <p class="text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora officiis, aliquam itaque repudiandae dicta exercitationem! Iusto voluptatibus consequatur tempora et deleniti asperiores? Aliquam, facilis asperiores.</p>
       
       <!-- Break It Down -->
       <div class="bg-custom-darker text-white">
-        <h3>Break It Down</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolor laborum explicabo dolores officiis maiores!</p>
+        <h3 class="font-accent text-3xl">Break It Down</h3>
+        <p class="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolor laborum explicabo dolores officiis maiores!</p>
       </div>
 
       <!-- Work Your Way Up -->
       <div class="bg-custom-darker text-white">
-        <h3>Work Your Way Up</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolor laborum explicabo!</p>
+        <h3 class="font-accent text-3xl">Work Your Way Up</h3>
+        <p class="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolor laborum explicabo!</p>
       </div>
 
       <!-- Show It Off -->
       <div class="bg-custom-darker text-white">
-        <h3>Show It Off</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio dicta maiores earum nemo sit itaque laudantium tempore rerum laboriosam!</p>
+        <h3 class="font-accent text-3xl">Show It Off</h3>
+        <p class="text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio dicta maiores earum nemo sit itaque laudantium tempore rerum laboriosam!</p>
       </div>
 
     </section>
@@ -84,17 +88,17 @@
   
   <!-- footer section -->
   <footer class="bg-custom-darker text-custom-dark">
-    <h2 class="text-white">just scratching the surface</h2>
+    <h2 class="font-accent text-2xl text-white">just scratching the surface</h2>
     
     <!-- About Our Company -->
     <div>
-      <h4 class="text-custom-accent">About Our Company</h4>
+      <h4 class="text-custom-accent font-accent text-xl">About Our Company</h4>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt distinctio consequuntur quas dolorum, fuga velit accusamus neque ab ipsum ullam temporibus libero impedit, itaque totam.</p>
     </div>
     
     <!-- Getting Around -->
     <div>
-      <h4 class="text-custom-accent">Getting Around</h4>
+      <h4 class="text-custom-accent font-accent text-xl">Getting Around</h4>
       <ul>
         <li>Home</li>
         <li>About</li>
@@ -104,7 +108,7 @@
     
     <!-- Other Things -->
     <div>
-      <h4 class="text-custom-accent">Other Things</h4>
+      <h4 class="text-custom-accent font-accent text-xl">Other Things</h4>
       <ul>
         <li>Lorem ipsum</li>
         <li>dolor</li>
@@ -115,7 +119,7 @@
 
     <!-- And More -->
     <div>
-      <h4 class="text-custom-accent">And More</h4>
+      <h4 class="text-custom-accent font-accent text-xl">And More</h4>
       <ul>
         <li>Lorem ipsum</li>
         <li>dolor</li>
