@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /*
+  I know the spec called for a max container of 1200px, but tailwind ships with some
+  quality default widths out of the box and `max-w-7xl` is 1280px, which is close enough
+  for me.  If you _really_ wanted, you could make it 1200px using the commented out line
+  instead, but that might start to collide with other tailwind provided utility classes
+  later, so be careful.
+
+  you might be tempted / confused about this vs using a breakpoint.  Remember, breakpoints
+  are for when you want to change your layout.  Here, we just want to constrain our max 
+  width.  Nothing CSS wise changes between on screens > 1280
+
+  You could also completely rewrite the provided tailwind theme to match your design spec,
+  but that's not something I wanted to get into for this project :-)
+
+  https://tailwindcss.com/docs/theme#overriding-the-default-theme
+  */
+  .max-container {
+    /* @apply max-w-[1200px] mx-auto px-4; */
+    @apply max-w-7xl mx-auto px-4;
+  }
+}
