@@ -13,120 +13,125 @@
 <body class="text-neutral-900 font-body text-base">
   <header class="text-white">
     <!-- nav bar -->
-    <nav class="bg-custom-darkest font-accent">
+    <nav class="bg-custom-darkest font-accent py-4 mx-auto px-4">
       <img src="./img/logo.svg" alt="CRL logo">
-      <ul class="text-lg">
+      <ul class="text-lg py-4 flex flex-col gap-2 items-center">
         <li class="uppercase">Home</li>
         <li class="uppercase">About</li>
         <li class="uppercase">Contact</li>
         <li class="uppercase">Sign In</li>
-        <li class="uppercase">Sign Up</li>
+        <li class="uppercase">
+          <a class="uppercase bg-custom-accent rounded-full px-4 py-1" href="#">Sign Up</a>
+        </li>
       </ul>
     </nav>
   
     <!-- hero section -->
-    <section class="bg-custom-darker">
-      <h1 class="font-accent text-8xl">Responsive layouts <span class="text-custom-accent">don't have to be a struggle</span></h1>
-      <p class="text-neutral-400 text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur, quam assumenda quaerat praesentium architecto vitae repudiandae sed!</p>
-      <a class="font-accent text-2xl uppercase" href="#">I want to learn</a>
+    <section class="bg-custom-darker py-32">
+      <div class="mx-auto px-4 flex flex-col">
+        <h1 class="font-accent text-8xl leading-[1.1] pb-12">Responsive layouts <span class="text-custom-accent">don't have to be a struggle</span></h1>
+        <div class="flex flex-col gap-6">
+          <p class="text-gray-300 text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur, quam assumenda quaerat praesentium architecto vitae repudiandae sed!</p>
+          <a class="font-accent text-2xl uppercase bg-custom-accent rounded-full px-6 py-2 max-w-max" href="#">I want to learn</a>
+        </div>
+      </div>
     </section>
   </header>
   
   <main>
     <!-- Mobile First / Efficient / Done Right -->
-    <section class="bg-neutral-200">
-
-      <!-- Mobile First -->
-      <div>
-        <h3 class="text-custom-accent font-accent text-3xl">Mobile First</h3>
-        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur doloribus mollitia consectetur.</p>
+    <section class="bg-neutral-200 py-20">
+      <div class="mx-auto px-4 flex flex-col gap-8">
+        <!-- Mobile First -->
+        <div>
+          <h3 class="text-custom-accent font-accent text-3xl pb-6">Mobile First</h3>
+          <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur doloribus mollitia consectetur.</p>
+        </div>
+        <!-- Efficient -->
+        <div>
+          <h3 class="text-custom-accent font-accent text-3xl pb-6">Efficient</h3>
+          <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur.</p>
+        </div>
+        <!-- Done Right -->
+        <div>
+          <h3 class="text-custom-accent font-accent text-3xl pb-6">Done Right</h3>
+          <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur. Quos totam placeat iusto saepe eius</p>
+        </div>
       </div>
-
-      <!-- Efficient -->
-      <div>
-        <h3 class="text-custom-accent font-accent text-3xl">Efficient</h3>
-        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur.</p>
-      </div>
-
-      <!-- Done Right -->
-      <div>
-        <h3 class="text-custom-accent font-accent text-3xl">Done Right</h3>
-        <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quo explicabo, quos totam placeat iusto saepe eius. Consectetur, quia totam? Ut consequatur. Quos totam placeat iusto saepe eius</p>
-      </div>
-
     </section>
 
-    <!-- It doesn’t have to be so hard -->
-    <section>
-      
+    <section class="py-20 mx-auto px-4">
       <!-- It doesn’t have to be so hard -->
-      <h2 class="text-custom-accent font-accent text-4xl">It doesn’t have to be so hard</h2>
-      <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in, nemo libero vitae amet eveniet doloremque, repellendus aspernatur neque quos alias perferendis expedita quam ducimus ut quasi earum voluptates tenetur necessitatibus aliquam et nobis! Dolor laborum amet magni fugiat libero?</p>
-      <img src="./img/hero-img.jpg" alt="blue purple and green watercolor designs">
-      <p class="text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora officiis, aliquam itaque repudiandae dicta exercitationem! Iusto voluptatibus consequatur tempora et deleniti asperiores? Aliquam, facilis asperiores.</p>
+      <h2 class="text-custom-accent font-accent text-4xl pb-6">It doesn’t have to be so hard</h2>
+      <p class="text-xl pb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in, nemo libero vitae amet eveniet doloremque, repellendus aspernatur neque quos alias perferendis expedita quam ducimus ut quasi earum voluptates tenetur necessitatibus aliquam et nobis! Dolor laborum amet magni fugiat libero?</p>
+      <img class="pb-6" src="./img/hero-img.jpg" alt="blue purple and green watercolor designs">
+      <p class="text-xl pb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora officiis, aliquam itaque repudiandae dicta exercitationem! Iusto voluptatibus consequatur tempora et deleniti asperiores? Aliquam, facilis asperiores.</p>
       
-      <!-- Break It Down -->
-      <div class="bg-custom-darker text-white">
-        <h3 class="font-accent text-3xl">Break It Down</h3>
-        <p class="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolor laborum explicabo dolores officiis maiores!</p>
-      </div>
-
-      <!-- Work Your Way Up -->
-      <div class="bg-custom-darker text-white">
-        <h3 class="font-accent text-3xl">Work Your Way Up</h3>
-        <p class="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolor laborum explicabo!</p>
-      </div>
-
-      <!-- Show It Off -->
-      <div class="bg-custom-darker text-white">
-        <h3 class="font-accent text-3xl">Show It Off</h3>
-        <p class="text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio dicta maiores earum nemo sit itaque laudantium tempore rerum laboriosam!</p>
+      <div class="flex flex-col gap-8">
+        <!-- Break It Down -->
+        <div class="bg-custom-darker text-white text-center px-8 py-6">
+          <h3 class="font-accent text-3xl pb-6">Break It Down</h3>
+          <p class="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolor laborum explicabo dolores officiis maiores!</p>
+        </div>
+        <!-- Work Your Way Up -->
+        <div class="bg-custom-darker text-white text-center px-8 py-6">
+          <h3 class="font-accent text-3xl pb-6">Work Your Way Up</h3>
+          <p class="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, dolor laborum explicabo!</p>
+        </div>
+        <!-- Show It Off -->
+        <div class="bg-custom-darker text-white text-center px-8 py-6">
+          <h3 class="font-accent text-3xl pb-6">Show It Off</h3>
+          <p class="text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio dicta maiores earum nemo sit itaque laudantium tempore rerum laboriosam!</p>
+        </div>
       </div>
 
     </section>
   </main>
   
   <!-- footer section -->
-  <footer class="bg-custom-darker text-custom-dark">
-    <h2 class="font-accent text-2xl text-white">just scratching the surface</h2>
-    
-    <!-- About Our Company -->
-    <div>
-      <h4 class="text-custom-accent font-accent text-xl">About Our Company</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt distinctio consequuntur quas dolorum, fuga velit accusamus neque ab ipsum ullam temporibus libero impedit, itaque totam.</p>
+  <footer class="bg-custom-darker text-neutral-300 py-20">
+    <div class="mx-auto px-4">
+      <h2 class="font-accent text-2xl text-white text-center pb-10">just scratching the surface</h2>
+      
+      <div class="flex flex-col gap-4">
+        <!-- About Our Company -->
+        <div>
+          <h4 class="text-custom-accent font-accent text-xl pb-4">About Our Company</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt distinctio consequuntur quas dolorum, fuga velit accusamus neque ab ipsum ullam temporibus libero impedit, itaque totam.</p>
+        </div>
+      
+        <!-- Getting Around -->
+        <div>
+          <h4 class="text-custom-accent font-accent text-xl pb-4">Getting Around</h4>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      
+        <!-- Other Things -->
+        <div>
+          <h4 class="text-custom-accent font-accent text-xl pb-4">Other Things</h4>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>dolor</li>
+            <li>sit amet</li>
+            <li>consectetur</li>
+          </ul>
+        </div>
+        <!-- And More -->
+        <div>
+          <h4 class="text-custom-accent font-accent text-xl pb-4">And More</h4>
+          <ul>
+            <li>Lorem ipsum</li>
+            <li>dolor</li>
+            <li>sit amet</li>
+            <li>consectetur</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    
-    <!-- Getting Around -->
-    <div>
-      <h4 class="text-custom-accent font-accent text-xl">Getting Around</h4>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </div>
-    
-    <!-- Other Things -->
-    <div>
-      <h4 class="text-custom-accent font-accent text-xl">Other Things</h4>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>dolor</li>
-        <li>sit amet</li>
-        <li>consectetur</li>
-      </ul>
-    </div>
-
-    <!-- And More -->
-    <div>
-      <h4 class="text-custom-accent font-accent text-xl">And More</h4>
-      <ul>
-        <li>Lorem ipsum</li>
-        <li>dolor</li>
-        <li>sit amet</li>
-        <li>consectetur</li>
-      </ul>
-    </div>      
   </footer>
 </body>
 </html>
