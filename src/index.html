@@ -13,22 +13,24 @@
 <body class="text-neutral-900 font-body text-base">
   <header class="text-white">
     <!-- nav bar -->
-    <nav class="bg-custom-darkest font-accent py-4 mx-auto px-4">
-      <img src="./img/logo.svg" alt="CRL logo">
-      <ul class="text-lg py-4 flex flex-col gap-2 items-center">
-        <li class="uppercase">Home</li>
-        <li class="uppercase">About</li>
-        <li class="uppercase">Contact</li>
-        <li class="uppercase">Sign In</li>
-        <li class="uppercase">
-          <a class="uppercase bg-custom-accent rounded-full px-4 py-1" href="#">Sign Up</a>
-        </li>
-      </ul>
+    <nav class="bg-custom-darkest font-accent py-4">
+      <div class="max-container">
+        <img src="./img/logo.svg" alt="CRL logo">
+        <ul class="text-lg py-4 flex flex-col gap-2 items-center">
+          <li class="uppercase">Home</li>
+          <li class="uppercase">About</li>
+          <li class="uppercase">Contact</li>
+          <li class="uppercase">Sign In</li>
+          <li class="uppercase">
+            <a class="uppercase bg-custom-accent rounded-full px-4 py-1" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   
     <!-- hero section -->
     <section class="bg-custom-darker py-32">
-      <div class="mx-auto px-4 flex flex-col">
+      <div class="max-container flex flex-col">
         <h1 class="font-accent text-8xl leading-[1.1] pb-12">Responsive layouts <span class="text-custom-accent">don't have to be a struggle</span></h1>
         <div class="flex flex-col gap-6">
           <p class="text-gray-300 text-2xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid consectetur, quam assumenda quaerat praesentium architecto vitae repudiandae sed!</p>
@@ -41,7 +43,7 @@
   <main>
     <!-- Mobile First / Efficient / Done Right -->
     <section class="bg-neutral-200 py-20">
-      <div class="mx-auto px-4 flex flex-col gap-8">
+      <div class="max-container flex flex-col gap-8">
         <!-- Mobile First -->
         <div>
           <h3 class="text-custom-accent font-accent text-3xl pb-6">Mobile First</h3>
@@ -60,7 +62,11 @@
       </div>
     </section>
 
-    <section class="py-20 mx-auto px-4">
+    <!-- 
+      because we don't have a background color on this section, we can put the
+      the .max-container on the section itself
+    -->
+    <section class="max-container py-20">
       <!-- It doesn’t have to be so hard -->
       <h2 class="text-custom-accent font-accent text-4xl pb-6">It doesn’t have to be so hard</h2>
       <p class="text-xl pb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit in, nemo libero vitae amet eveniet doloremque, repellendus aspernatur neque quos alias perferendis expedita quam ducimus ut quasi earum voluptates tenetur necessitatibus aliquam et nobis! Dolor laborum amet magni fugiat libero?</p>
@@ -90,7 +96,7 @@
   
   <!-- footer section -->
   <footer class="bg-custom-darker text-neutral-300 py-20">
-    <div class="mx-auto px-4">
+    <div class="max-container">
       <h2 class="font-accent text-2xl text-white text-center pb-10">just scratching the surface</h2>
       
       <div class="flex flex-col gap-4">
