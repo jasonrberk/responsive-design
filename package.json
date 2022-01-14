@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css",
+    "predeploy": "npm run build",
+    "deploy": "cp -r ./src/* ./docs",
+    "postdeploy": "rm ./docs/input.css"
   },
   "keywords": [],
   "author": "",
