@@ -14,3 +14,7 @@ this assumes you are running VS Code and the `Live Server` extension:
 1. run `npm install` to install tailwind
 1. start the tailwind cli with `npm run tailwind`
 1. launch `Live Server`
+
+## Demo Site
+
+I deployed this site using GH pages at https://jasonrberk.github.io/responsive-design/
