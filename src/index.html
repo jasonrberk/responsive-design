@@ -100,48 +100,68 @@
   
   <!-- footer section -->
   <footer class="bg-custom-darker text-neutral-300 py-20">
-    <div class="max-container max-w-3xl">
-      <h2 class="font-accent text-3xl text-white text-center pb-10">just scratching the surface</h2>
+    <div class="max-container">
       
-      <!-- About Our Company -->
-      <div class="md:text-center">
-        <h4 class="text-custom-accent font-accent text-xl pb-4">About Our Company</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt distinctio consequuntur quas dolorum, fuga velit accusamus neque ab ipsum ullam temporibus libero impedit, itaque totam.</p>
-      </div>
-      
-      <div class="pt-10 flex flex-col gap-4 md:flex-row md:justify-between">
-        <!-- Getting Around -->
-        <div>
-          <h4 class="text-custom-accent font-accent text-xl pb-4">Getting Around</h4>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
+      <!-- I think the font size in the spec is wrong.  24px seems way to small -->
+      <h2 class="font-accent text-5xl text-white text-center pb-12">just scratching the surface</h2>
+  
+      <div class="flex flex-col gap-8 lg:flex-row lg:gap-24">
+        
+        <!-- About Our Company -->
+        <div class="lg:basis-2/5">
+          <h4 class="text-custom-accent font-accent text-xl pb-4">About Our Company</h4>
+          <p class="max-w-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt distinctio consequuntur quas dolorum, fuga velit accusamus neque ab ipsum ullam temporibus libero impedit, itaque totam.</p>
         </div>
-      
-        <!-- Other Things -->
-        <div>
-          <h4 class="text-custom-accent font-accent text-xl pb-4">Other Things</h4>
-          <ul>
-            <li>Lorem ipsum</li>
-            <li>dolor</li>
-            <li>sit amet</li>
-            <li>consectetur</li>
-          </ul>
-        </div>
-        <!-- And More -->
-        <div>
-          <h4 class="text-custom-accent font-accent text-xl pb-4">And More</h4>
-          <ul>
-            <li>Lorem ipsum</li>
-            <li>dolor</li>
-            <li>sit amet</li>
-            <li>consectetur</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+        
+        <div class="flex flex-col gap-4 md:flex-row md:justify-between lg:basis-3/5">
+          <!-- Getting Around -->
+          <div class="">
+            <h4 class="text-custom-accent font-accent text-xl pb-4">Getting Around</h4>
+            <ul class="leading-7">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        
+          <!-- Other Things -->
+          <div class="">
+            <h4 class="text-custom-accent font-accent text-xl pb-4">Other Things</h4>
+            <ul class="leading-7">
+              <li>Lorem ipsum</li>
+              <li>dolor</li>
+              <li>sit amet</li>
+              <li>consectetur</li>
+            </ul>
+          </div>
+
+          <!-- And More -->
+          <div class="">
+            <h4 class="text-custom-accent font-accent text-xl pb-4">And More</h4>
+            <ul class="leading-7">
+              <li>Lorem ipsum</li>
+              <li>dolor</li>
+              <li>sit amet</li>
+              <li>consectetur</li>
+            </ul>
+          </div>
+        </div> <!-- end inner flex -->
+
+      </div> <!-- end outer flex -->
+
+    </div> <!-- end max-container -->
   </footer>
 </body>
+
+  <script>
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function(e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
+
 </html>
